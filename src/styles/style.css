@@ -1,0 +1,80 @@
+:root {
+  --primary_blue: #110cff;
+  --primary_orange: #ff5b22;
+  --beige_100: #ffefdd;
+  --beige_200: #ffd098;
+  --beige_300: #bc7016;
+  --primary_black: #0e0e0e;
+  --primary_white: #ffffff;
+  --secondary_pink: #ffd4d4;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+.pink_gradient {
+  background-color: var(--secondary_pink);
+  opacity: 81%;
+}
+
+.blue_gradient {
+  background-color: var(--primary_blue);
+  opacity: 69%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+  font-family: Helvetica;
+  line-height: 1.6;
+}
+
+.h1 {
+  font-size: 5.619rem;
+  font-weight: bold;
+}
+
+.h2 {
+  font-size: 4.209rem;
+  font-weight: bold;
+}
+
+.h3 {
+  font-size: 3.157rem;
+  font-weight: bold;
+}
+.h4 {
+  font-size: 2.369rem;
+  font-weight: bold;
+}
+.h5 {
+  font-size: 1.777rem;
+  font-weight: bold;
+}
+.h6 {
+  font-size: 1.333rem;
+  font-weight: bold;
+}
+p {
+  font-size: 1rem;
+}
+a {
+  font-size: 1rem;
+}
+
+.stroke {
+  color: var(--beige_100);
+  -webkit-text-stroke: 2px var(--primary_blue);
+}
