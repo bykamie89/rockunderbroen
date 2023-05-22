@@ -1,15 +1,23 @@
 ---
+import "../styles/generel.css";
+
+import Card from "../components/Card.astro";
+import Navigation from "../components/Navigation.astro";
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Forside</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Forside</title>
+  </head>
+  <body>
+    <Navigation />
+    <h1>Astro</h1>
+    <Card header="Hej Verden" text="lLorem ipsum ja tak" />
+    <Card header="Hej Hold A" text="lLorem ipsum ja tak" />
+    <Card header="Hej Hold B" text="lLorem ipsum ja tak" />
+  </body>
 </html>
