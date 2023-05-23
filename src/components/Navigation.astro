@@ -2,5 +2,29 @@
 ---
 
 <nav>
-  <a href="/#">Hjem</a><a href="/#">Program</a><a href="/#">Om os</a>
+  <div class="menu">
+    <ul >
+      <li>
+        <a class="menuItem" href="/index.astro">Forsiden</a>
+      </li>
+      <li>
+        <a class="menuItem" href="/billetter.astro">Billetter</a>
+      </li>
+      <li>
+        <a class="menuItem" href="/pages/program.astro">Program</a>
+      </li>
+      <li>
+        <a class="menuItem" href="../pages/praktisk.astro">Praktisk info</a>
+      </li>
+      <li>
+        <a class="menuItem" href="../pages/kort.astro">Find vej</a>
+      </li>
+    </ul>
+  </div>
+
+  <button class="menu_toggle_btn md:hidden">
+    <img src="/img/burgerIconBlack.svg" alt="bars" class="menuIcon" />
+    <img src="/img/closeIconBlack.svg" alt="close" class="closeIcon" />
+  </button>
 </nav>
+
