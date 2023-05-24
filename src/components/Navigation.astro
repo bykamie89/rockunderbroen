@@ -3,30 +3,33 @@ import "../styles/style.css";
 ---
 
 <nav >
-  <a href="index.html" class="top-xxs left-xxs absolute"><img class="" src="/img/logo-black-web.svg" alt="logo" /></a>
+  <a href="index.html" class="top-xxs left-xxs absolute hidden md:block"><img class="" src="/img/logo-black-web.svg" alt="logo" /></a>
+  <a href="index.html" class="top-xxs left-xxs absolute md:hidden"><img class="" src="/img/logo-black-mobil.svg" alt="logo" /></a>
   <div class="menu bg-primary_blue pl-xs md:pl-xxxl ">
-    <a href="index.html" class="top-xxs left-xxs absolute"><img class="" src="/img/logo-white-web.svg" alt="logo" /></a>
+    <a href="index.html" class="top-xxs left-xxs absolute hidden md:block"><img class="" src="/img/logo-white-web.svg" alt="logo" /></a>
+    <a href="index.html" class="top-xxs left-xxs absolute md:hidden"><img class="" src="/img/logo-white-mobil.svg" alt="logo" /></a>
     
     <ul class="mt-xxl">
       <li>
-        <a class="menuItem text-primary_white mb-xs md:mb-s h2" href="billetter.html">Billetter</a>
+        <a class="menuItem text-primary_white h4 mb-xs md:mb-s md:h2" href="billetter.html">Billetter</a>
       </li>
       <li>
-        <a class="menuItem text-primary_white mb-xs md:mb-s h2" href="program.html">Program</a>
+        <a class="menuItem text-primary_white h4 mb-xs md:mb-s md:h2" href="program.html">Program</a>
       </li>
       <li>
-        <a class="menuItem text-primary_white mb-xs md:mb-s h2" href="praktisk.html">Praktisk info</a>
+        <a class="menuItem text-primary_white h4 mb-xs md:mb-s md:h2" href="praktisk.html">Praktisk info</a>
       </li>
       <li>
-        <a class="menuItem text-primary_white h2 " href="kort.html">Find vej</a>
+        <a class="menuItem text-primary_white h4 md:h2 " href="kort.html">Find vej</a>
       </li>
     </ul>
 
   </div>
 
-  <button class="menu_toggle_btn top-s right-s">
-    <img src="/img/burgerIconBlack.svg" alt="bars" class=" h-s w-s  menuIcon" />
-    <img src="/img/closeIconWhite.svg" alt="close" class=" h-full w-full closeIcon" />
+  <button class="menu_toggle_btn top-xs right-xs md:top-s md:right-s">
+    <img src="/img/burgerIconBlack.svg" alt="bars" class=" w-xs h-xs md:h-s md:w-s menuIcon " />
+    <img src="/img/closeIconWhite.svg" alt="close" class=" w-xs h-xs md:h-full md:w-full closeIcon" />
+ 
   </button>
 </nav>
 
@@ -36,10 +39,6 @@ import "../styles/style.css";
     display: block;
     text-decoration: none;
 
-  }
-
-  .menuItem:hover {
-    text-decoration: underline;
   }
 
   .menu_toggle_btn {

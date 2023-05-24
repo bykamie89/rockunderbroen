@@ -72,6 +72,10 @@ p {
 }
 a {
   font-size: 1rem;
+
+}
+a:hover{
+  text-decoration: underline;
 }
 
 .stroke {
@@ -82,3 +86,6 @@ a {
 .expanded {
   display: none;
 }
+ .orangeline {
+  border: 0.5px solid var(--primary_orange);
+ }
