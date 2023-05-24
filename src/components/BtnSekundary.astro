@@ -1,0 +1,19 @@
+---
+import "../styles/style.css";
+const { btn_sekundary } = Astro.props;
+---
+
+<button class="flex items-center btn_primary_small"
+  >{btn_sekundary}
+  <slot />
+</button>
+
+<style>
+  .btn_primary_small {
+    color: var(----primary_black);
+    border: 3px solid var(--primary_black);
+    padding: 18px 30px 18px 30px;
+    border-radius: 19px;
+    margin: 1rem;
+  }
+</style>

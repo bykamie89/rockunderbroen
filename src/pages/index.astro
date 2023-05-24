@@ -5,7 +5,9 @@ import Navigation from "../components/Navigation.astro";
 import Footer from "../components/Footer.astro";
 import OverviewDropdown from "../components/OverviewDropdown.astro";
 import ProgramElement from "../components/ProgramElement.astro";
-
+import BtnPrimary from "../components/BtnPrimary.astro";
+import BtnSekundary from "../components/BtnSekundary.astro";
+import CardSingleview from "../components/CardSingleview.astro";
 ---
 
 <html lang="en">
@@ -17,40 +19,29 @@ import ProgramElement from "../components/ProgramElement.astro";
     <title>Forside</title>
   </head>
 
-
-
-  <body class="bg-beige_100 ">
+  <body class="bg-beige_100">
     <header>
       <Navigation />
     </header>
-     <main class="min-h-screen">
-      <ProgramElement time="18.00" artist="Malthe Ebert"/>
-      <OverviewDropdown overskrift='Betaling'>
-      <p slot="beskrivelse">I 2023 kan man betale kort i alle barer på pladsen. 
-        Vi modtager alle korttyper. Det vil også være muligt at benytte Google- og 
-        Apple Pay Herudover vil det være muligt at forkøbe drikkevarer drikkevarer 
-        på vores app, som kan indløses i alle vores barer. 
-        Du kan IKKE betale MobilePay.</p>
-      <OverviewDropdown/>
-      <ProgramElement time="18.00" artist="Malthe Ebert"/>
-      <OverviewDropdown overskrift='test'>
-        <p slot="beskrivelse">I 2023 kan man betale kort i alle barer på pladsen. 
-          Vi modtager alle korttyper. Det vil også være muligt at benytte Google- og 
-          Apple Pay Herudover vil det være muligt at forkøbe drikkevarer drikkevarer 
-          på vores app, som kan indløses i alle vores barer. 
-          Du kan IKKE betale MobilePay.</p>
-        <OverviewDropdown/>
-        <ProgramElement time="18.00" artist="Malthe Ebert"/>
+    <main class="min-h-screen">
+      <ProgramElement time="18.00" artist="Malthe Ebert" />
+      <OverviewDropdown overskrift="Betaling">
+        <p slot="beskrivelse">I 2023 kan man betale kort i alle barer på pladsen. Vi modtager alle korttyper. Det vil også være muligt at benytte Google- og Apple Pay Herudover vil det være muligt at forkøbe drikkevarer drikkevarer på vores app, som kan indløses i alle vores barer. Du kan IKKE betale MobilePay.</p>
+        <OverviewDropdown />
+        <ProgramElement time="18.00" artist="Malthe Ebert" />
+        <OverviewDropdown overskrift="test">
+          <p slot="beskrivelse">I 2023 kan man betale kort i alle barer på pladsen. Vi modtager alle korttyper. Det vil også være muligt at benytte Google- og Apple Pay Herudover vil det være muligt at forkøbe drikkevarer drikkevarer på vores app, som kan indløses i alle vores barer. Du kan IKKE betale MobilePay.</p>
+          <OverviewDropdown />
+          <ProgramElement time="18.00" artist="Malthe Ebert" />
+        </OverviewDropdown>
+        <footer>
+          <Footer />
+        </footer>
+        <script>
+          import "../scripts/menu.js";
+          import "../scripts/overviewDropdown.js";
+        </script>
+      </OverviewDropdown>
     </main>
-    <footer>
-      <Footer/>
-    </footer>
-   <script>
-      import "../scripts/menu.js";
-      import "../scripts/overviewDropdown.js";
-   </script>
   </body>
-
 </html>
-
-
