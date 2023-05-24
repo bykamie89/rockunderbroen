@@ -21,9 +21,14 @@ import OverviewDropdown from "../components/OverviewDropdown.astro";
   <body class="bg-beige_100 min-h-screen">
     
       <Navigation />
-      <OverviewDropdown 
-      overskrift='Betaling' 
-       />
+      <OverviewDropdown overskrift='Betaling' >
+      <p slot="beskrivelse">I 2023 kan man betale kort i alle barer på pladsen. 
+        Vi modtager alle korttyper. Det vil også være muligt at benytte Google- og 
+        Apple Pay Herudover vil det være muligt at forkøbe drikkevarer drikkevarer 
+        på vores app, som kan indløses i alle vores barer. 
+        Du kan IKKE betale MobilePay.</p>
+      <OverviewDropdown/>
+      
       <Footer />
 
    <script>
