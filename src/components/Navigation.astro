@@ -1,20 +1,19 @@
 ---
 ---
 
-<nav>
-  <div class="menu bg-primary_blue pl-xxxl">
+<nav >
+  <a href="index.html" class="top-xxs left-xxs absolute"><img class="" src="/img/logo-black-web.svg" alt="logo" /></a>
+  <div class="menu bg-primary_blue pl-xs md:pl-xxxl ">
+    <a href="index.html" class="top-xxs left-xxs absolute"><img class="" src="/img/logo-white-web.svg" alt="logo" /></a>
     <ul >
-      <li >
-        <a class="menuItem text-primary_white " href="index.html">Forsiden</a>
+      <li>
+        <a class="menuItem text-primary_white mb-xs md:mb-s" href="billetter.html">Billetter</a>
       </li>
       <li>
-        <a class="menuItem text-primary_white " href="billetter.html">Billetter</a>
+        <a class="menuItem text-primary_white mb-xs md:mb-s" href="program.html">Program</a>
       </li>
       <li>
-        <a class="menuItem text-primary_white " href="program.html">Program</a>
-      </li>
-      <li>
-        <a class="menuItem text-primary_white " href="praktisk.html">Praktisk info</a>
+        <a class="menuItem text-primary_white mb-xs md:mb-s" href="praktisk.html">Praktisk info</a>
       </li>
       <li>
         <a class="menuItem text-primary_white " href="kort.html">Find vej</a>
@@ -24,7 +23,7 @@
 
   <button class="menu_toggle_btn top-s right-s">
     <img src="/img/burgerIconBlack.svg" alt="bars" class=" h-s w-s  menuIcon" />
-    <img src="/img/closeIconBlack.svg" alt="close" class=" m-0 p-0 h-full w-full closeIcon" />
+    <img src="/img/closeIconWhite.svg" alt="close" class=" h-full w-full closeIcon" />
   </button>
 </nav>
 
@@ -32,7 +31,6 @@
 <style> 
   .menuItem {
     display: block;
-    margin: 2rem 4rem;
     text-decoration: none;
 
   }
@@ -44,7 +42,6 @@
   .menu_toggle_btn {
     position: fixed;
     z-index: 100;
-    padding: 4px;
     cursor: pointer;
   }
 
@@ -61,7 +58,6 @@
     right: 0;
     bottom: 0;
     z-index: 99;
-    padding-top: 4rem;
   }
 
   .showMenu {
