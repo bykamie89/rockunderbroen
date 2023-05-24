@@ -2,29 +2,68 @@
 ---
 
 <nav>
-  <div class="menu">
+  <div class="menu bg-primary_blue pl-xxxl">
     <ul >
-      <li>
-        <a class="menuItem" href="/index.astro">Forsiden</a>
+      <li >
+        <a class="menuItem text-primary_white " href="index.html">Forsiden</a>
       </li>
       <li>
-        <a class="menuItem" href="/billetter.astro">Billetter</a>
+        <a class="menuItem text-primary_white " href="billetter.html">Billetter</a>
       </li>
       <li>
-        <a class="menuItem" href="/pages/program.astro">Program</a>
+        <a class="menuItem text-primary_white " href="program.html">Program</a>
       </li>
       <li>
-        <a class="menuItem" href="../pages/praktisk.astro">Praktisk info</a>
+        <a class="menuItem text-primary_white " href="praktisk.html">Praktisk info</a>
       </li>
       <li>
-        <a class="menuItem" href="../pages/kort.astro">Find vej</a>
+        <a class="menuItem text-primary_white " href="kort.html">Find vej</a>
       </li>
     </ul>
   </div>
 
-  <button class="menu_toggle_btn md:hidden">
-    <img src="/img/burgerIconBlack.svg" alt="bars" class="menuIcon" />
-    <img src="/img/closeIconBlack.svg" alt="close" class="closeIcon" />
+  <button class="menu_toggle_btn top-s right-s">
+    <img src="/img/burgerIconBlack.svg" alt="bars" class=" h-s w-s  menuIcon" />
+    <img src="/img/closeIconBlack.svg" alt="close" class=" m-0 p-0 h-full w-full closeIcon" />
   </button>
 </nav>
 
+
+<style> 
+  .menuItem {
+    display: block;
+    margin: 2rem 4rem;
+    text-decoration: none;
+
+  }
+
+  .menuItem:hover {
+    text-decoration: underline;
+  }
+
+  .menu_toggle_btn {
+    position: fixed;
+    z-index: 100;
+    padding: 4px;
+    cursor: pointer;
+  }
+
+  .closeIcon {
+    display: none;
+  }
+
+  .menu {
+    position: fixed;
+    transform: translateY(-100%);
+    transition: transform 0.2s;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+    padding-top: 4rem;
+  }
+
+  .showMenu {
+    transform: translateY(0);
+  }</style>

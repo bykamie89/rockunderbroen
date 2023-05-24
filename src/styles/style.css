@@ -78,3 +78,7 @@ a {
   color: var(--beige_100);
   -webkit-text-stroke: 2px var(--primary_blue);
 }
+
+.expanded {
+  display: none;
+}
