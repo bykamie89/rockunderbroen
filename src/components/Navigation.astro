@@ -1,24 +1,27 @@
 ---
+import "../styles/style.css";
 ---
 
 <nav >
   <a href="index.html" class="top-xxs left-xxs absolute"><img class="" src="/img/logo-black-web.svg" alt="logo" /></a>
   <div class="menu bg-primary_blue pl-xs md:pl-xxxl ">
     <a href="index.html" class="top-xxs left-xxs absolute"><img class="" src="/img/logo-white-web.svg" alt="logo" /></a>
-    <ul >
+    
+    <ul class="mt-xxl">
       <li>
-        <a class="menuItem text-primary_white mb-xs md:mb-s" href="billetter.html">Billetter</a>
+        <a class="menuItem text-primary_white mb-xs md:mb-s h2" href="billetter.html">Billetter</a>
       </li>
       <li>
-        <a class="menuItem text-primary_white mb-xs md:mb-s" href="program.html">Program</a>
+        <a class="menuItem text-primary_white mb-xs md:mb-s h2" href="program.html">Program</a>
       </li>
       <li>
-        <a class="menuItem text-primary_white mb-xs md:mb-s" href="praktisk.html">Praktisk info</a>
+        <a class="menuItem text-primary_white mb-xs md:mb-s h2" href="praktisk.html">Praktisk info</a>
       </li>
       <li>
-        <a class="menuItem text-primary_white " href="kort.html">Find vej</a>
+        <a class="menuItem text-primary_white h2 " href="kort.html">Find vej</a>
       </li>
     </ul>
+
   </div>
 
   <button class="menu_toggle_btn top-s right-s">
@@ -52,7 +55,6 @@
   .menu {
     position: fixed;
     transform: translateY(-100%);
-    transition: transform 0.2s;
     top: 0;
     left: 0;
     right: 0;
