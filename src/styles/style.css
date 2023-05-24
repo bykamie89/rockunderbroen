@@ -89,3 +89,7 @@ a:hover{
  .orangeline {
   border: 0.5px solid var(--primary_orange);
  }
+
+ .blueLine {
+  border: 0.5px solid var(--primary_blue);
+ }
