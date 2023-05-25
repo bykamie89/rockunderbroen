@@ -1,22 +1,23 @@
 ---
-
+import BtnSekundaryBlack from "../components/BtnSekundaryBlack.astro";
 ---
 
-<div class=" lg:mr-xxxl lg:ml-xxxl bg-beige_200 rounded-lg px-s py-s md:py-m md:px-m lg:py-xl lg:-px-xl">
+<div class=" border-2 border-primary_blue mr-xs ml-xs lg:mr-xxxl lg:ml-xxxl bg-beige_200 rounded-lg px-xs py-xs md:py-m md:px-m lg:py-xl lg:-px-xl">
     <form action="/action_page.php">
-      <label class="lg:text-2xl font-bold" for="fnavn">Fulde navn</label>
-      <input class=" border-2 border-primary_blue w-full h-s rounded-lg bg-primary_white lg:pl-xxxs lg:mt-xxxs lg:mb-s" type="text" id="fnavn" name="fuldenavn" placeholder="John Doe">
+      <label class="text-xl lg:text-2xl font-bold" for="fnavn">Fulde navn</label>
+      <input class=" border-2 border-primary_blue w-full h-s rounded-lg bg-primary_white pl-xxxs mb-xs lg:mb-s" type="text" id="fnavn" name="fuldenavn" placeholder="John Doe">
   
-      <label class="lg:text-2xl font-bold" for="email">Email</label>
-      <input class=" border-2 border-primary_blue w-full h-s rounded-lg bg-primary_white lg:pl-xxxs lg:mt-xxxs lg:mb-s" type="email" id="Email" name="Email" placeholder="Jd@gmail.com">
+      <label class="text-xl lg:text-2xl font-bold" for="email">Email</label>
+      <input class=" border-2 border-primary_blue w-full h-s rounded-lg bg-primary_white pl-xxxs mb-xs lg:mb-s" type="email" id="Email" name="Email" placeholder="Jd@gmail.com">
   
-      <label class="lg:text-2xl font-bold" for="tlf">Email</label>
-      <input class=" border-2 border-primary_blue w-full h-s rounded-lg bg-primary_white lg:pl-xxxs lg:mt-xxxs lg:mb-s" type="tel" id="tlf" name="tlf" placeholder="+45 11223344">
+      <label class=" text-xl lg:text-2xl font-bold" for="tlf">Email</label>
+      <input class=" border-2 border-primary_blue w-full h-s rounded-lg bg-primary_white pl-xxxs mb-xs lg:mb-s" type="tel" id="tlf" name="tlf" placeholder="+45 11223344">
   
   
-      <label class="lg:text-2xl font-bold" for="besked">Besked</label>
-      <textarea class=" border-2 border-primary_blue w-full rounded-lg bg-primary_white lg:pl-xxxs lg:mt-xxxs lg:mb-s" id="besked" name="besked" style="height:200px"></textarea>
+      <label class="text-xl lg:text-2xl font-bold" for="besked">Besked</label>
+      <textarea class=" border-2 border-primary_blue w-full rounded-lg bg-primary_white pl-xxxs mb-xs lg:mb-s" id="besked" name="besked" style="height:200px"></textarea>
   
+      <BtnSekundaryBlack btn_sekundary="Send besked"/>
       
     </form>
   </div>

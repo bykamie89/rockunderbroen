@@ -10,6 +10,8 @@ import BtnSekundaryBlack from "../components/BtnSekundaryBlack.astro";
 import BtnSekundaryWhite from "../components/BtnSekundaryWhite.astro";
 import CardSingleview from "../components/CardSingleview.astro";
 import CardBillet from "../components/CardBillet.astro";
+import Contactform from "../components/Contactform.astro"
+import PosterLineup from "../components/PosterLineup.astro"
 ---
 
 <html lang="en">
@@ -26,12 +28,7 @@ import CardBillet from "../components/CardBillet.astro";
       <Navigation />
     </header>
     <main class="min-h-screen mt-xl">
-      <BtnPrimary btn_primary="Køb billet" />
-
-      <BtnSekundaryBlack btn_sekundary="Se program" />
-      <BtnSekundaryWhite btn_sekundary="Se program" />
-      <CardSingleview artist="DREW SACYMORE" tid="Fredag kl. 18" />
-      <CardBillet title="Fredagsbillet" date="9. Juni 2023" opening="Dørerne åbner kl. 15:00" price="695 DKK" />
+      <PosterLineup/>
       <footer>
         <Footer />
       </footer>
