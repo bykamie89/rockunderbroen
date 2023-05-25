@@ -1,25 +1,20 @@
 ---
 import "../styles/style.css";
+
 const { btn_primary } = Astro.props;
 ---
 
-<button class="btn_primary_small md:text-2xl lg:text-2xl lg:hover:text-3xl">{btn_primary}</button>
+<button class="btn_primary_small flex flex-col items-center text-primary_white bg-primary_blue">{btn_primary}</button>
 
 <style>
   .btn_primary_small {
-    color: var(--primary_white);
-    background-color: var(--primary_blue);
-    padding: 18px 30px 18px 30px;
+    padding: 15px 25px 15px 25px;
     border-radius: 19px;
-    display: flex;
-    flex-direction: column;
-    align-self: center;
-
-    box-shadow: 0px 5px 5px #022a99;
+    box-shadow: 0px 5px 5px #012177;
   }
 
   .btn_primary_small:hover {
-    box-shadow: 2.5px 7.5px 10px #022a99;
+    box-shadow: 2.5px 7.5px 10px #012177;
     font-size: 1.1rem;
   }
 </style>

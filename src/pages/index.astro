@@ -23,7 +23,15 @@ import CardSingleview from "../components/CardSingleview.astro";
     <header>
       <Navigation />
     </header>
-    <main class="min-h-screen mt-xl"></main>
+    <main class="min-h-screen mt-xl">
+      <BtnPrimary btn_primary="Køb billet" />
+      <BtnSekundary btn_sekundary="Se program">
+        <img src="/img/openArrow.svg" alt="" />
+      </BtnSekundary>
+      <BtnSekundary btn_sekundary="Se program" />
+      <CardSingleview artist="DREW SACYMORE" tid="Fredag kl. 18" />
+    </main>
+
     <footer>
       <Footer />
     </footer>
