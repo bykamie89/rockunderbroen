@@ -2,12 +2,12 @@
 import "../styles/style.css";
 ---
 
-<nav class="mt-xxs ml-xxs md:mt-xs md:ml-xs sticky md:h-xxl bg-beige_100">
-  <a href="index.html" class=" fixed top-xs left-xs  hidden md:block"><img class="" src="/img/logo-black-web.svg" alt="logo" /></a>
-  <a href="index.html" class=" fixed top-xs left-xs  md:hidden"><img class="" src="/img/logo-black-mobil.svg" alt="logo" /></a>
-  <div class="menu bg-primary_blue ">
-    <a href="index.html" class=" fixed mt-xs ml-xs  hidden md:block"><img class="" src="/img/logo-white-web.svg" alt="logo" /></a>
-    <a href="index.html" class=" fixed md:hidden"><img class="ml-xs mt-xs" src="/img/logo-white-mobil.svg" alt="logo" /></a>
+<nav class="flex justify-between mt-xxs ml-xxs mr-xxs mb-xxs md:mt-s md:mr-s md:mb-s md:ml-s bg-beige_100">
+  <a href="index.html" class=" hidden md:block"><img src="/img/logo-black-web.svg" alt="logo" /></a>
+  <a href="index.html" class="  md:hidden"><img src="/img/logo-black-mobil.svg" alt="logo" /></a>
+  <div class="menu bg-primary_blue pt-xxs pl-xxs pb-xxs md:pt-s md:pb-s md:pl-s">
+    <a href="index.html" class="hidden md:block"><img src="/img/logo-white-web.svg" alt="logo" /></a>
+    <a href="index.html" class=" md:hidden"><img src="/img/logo-white-mobil.svg" alt="logo" /></a>
     
     <ul class=" ml-xs mt-xxl md:mt-xxxl md:ml-xxl ">
       <li>
@@ -26,7 +26,7 @@ import "../styles/style.css";
 
   </div>
 
-  <button class="menu_toggle_btn top-s right-s md:top-m md:right-m">
+  <button class="menu_toggle_btn">
     <img src="/img/burgerIconBlack.svg" alt="bars" class=" menuIcon " />
     <img src="/img/closeIconWhite.svg" alt="close" class=" closeIcon" />
  
@@ -42,7 +42,7 @@ import "../styles/style.css";
   }
 
   .menu_toggle_btn {
-    position: fixed;
+ 
     z-index: 100;
     cursor: pointer;
   }
