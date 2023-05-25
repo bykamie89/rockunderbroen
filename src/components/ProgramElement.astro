@@ -4,13 +4,13 @@ import "../styles/style.css";
 const { time, artist } = Astro.props;
 ---
 <hr class="blueLine"/>
+<a class="hover:no-underline" href="singleview.html">
 <div class="flex justify-between mt-xxs mb-xxs mr-xs ml-xs md:mr-xl md:ml-xl ">
     <div class="flex">
-<p class=" text-primary_blue font-bold">{time}</p>
-<h3 class=" font-bold text-4xl md:text-6xl stroke">{artist}</h3>
+<p class="-mt-1 md:-mt-2 md:text-2xl lg:-mt-1 mr-2 text-primary_blue font-bold lg:text-3xl">{time}</p>
+<h3 class=" mr-2 hover:text-primary_blue font-bold leading-none text-4xl md:text-5xl lg:text-6xl stroke">{artist}</h3>
 </div>
-<button>
-    <a href="singleview.html">Læs mere</a>
-</button>
+<img class=" lg:w-20" src="/img/rightArrow.svg" alt="">
 </div>
+</a>
 <hr class="blueLine"/>
