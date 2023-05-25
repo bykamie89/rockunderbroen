@@ -1,0 +1,24 @@
+---
+import "../styles/style.css";
+const { btn_sekundary } = Astro.props;
+---
+
+<button class="btn_sekundary border-4 border-primary_white flex flex-col items-center text-primary_white md:text-xl">{btn_sekundary}</button>
+
+<style>
+  .btn_sekundary {
+    padding: 11px 21px 11px 21px;
+    border-radius: 19px;
+  }
+
+  .btn_sekundary:hover {
+    box-shadow: 2px 5px 8px #b5b5b5;
+    font-size: 1.03rem;
+  }
+
+  @media (min-width: 768px) {
+    .btn_sekundary:hover {
+      font-size: 1.28rem;
+    }
+  }
+</style>
