@@ -2,6 +2,9 @@
 import "../styles/style.css";
 
 import Navigation from "../components/Navigation.astro";
+import Footer from "../components/Footer.astro";
+import ProgramElement from "../components/ProgramElement.astro";
+import BtnPrimary from "../components/BtnPrimary.astro";
 
 ---
 
@@ -12,15 +15,48 @@ import Navigation from "../components/Navigation.astro";
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
 
-    <title>Forside</title>
+    <title>Program</title>
   </head>
-
-
-
   <body class="bg-beige_100">
-    <header>
+    <header class="mb-s lg:mb-xxl">
       <Navigation />
     </header>
+    <main >
+      <section class="flex items-center flex-col mr-s ml-s ">
+        <img class="mb-xs lg:mb-xl" src="/img/program_hero.svg" alt="">
+        <h1 class="text-xl font-bold mb-m text-center lg:text-5xl lg:mb-xxl">Se sommerens fedeste <br> festivalsprogram her!</h1>
+      </section>
+      <section class="mb-l lg:md-l">
+        <h2 class="text-xl font-bold mb-xs ml-xxs lg:text-5xl lg:ml-l ">FREDAG 09.06.2023</h2>
+        <ProgramElement time="16:00" artist="Malthe Ebert"/>
+        <ProgramElement time="17:30" artist="Drew Sycamore"/>
+        <ProgramElement time="19:00" artist="Tobias Rahim"/>
+        <ProgramElement time="20:30" artist="Christopher"/>
+        <ProgramElement time="22:00" artist="Thomas Helmig"/>
+      </section>
+      <section>
+        <h2 class="text-xl font-bold mb-xs ml-xxs lg:text-5xl lg:ml-l">LØRDAG 10.06.2023</h2>
+        <ProgramElement time="12:00" artist="Schubberne"/>
+        <ProgramElement time="13:30" artist="Folkeklubben"/>
+        <ProgramElement time="15:00" artist="Hugorm"/>
+        <ProgramElement time="16:30" artist="Jada"/>
+        <ProgramElement time="18:00" artist="Burhan G"/>
+        <ProgramElement time="19:30" artist="Carpark North"/>
+        <ProgramElement time="21:00" artist="The Minds Of 99"/>
+        <ProgramElement time="22:45" artist="TV-2"/>
+      </section>
+      <section class="flex flex-col items-center mb-m mt-m lg:text-3xl">
+        <h2 class="text-xl font-bold  mb-xxxs "> Gå ikke glip af årets fedeste lineup</h2>
+        <p class="mb-s">Tag dine venner, familie, kæreste eller badedyr med <br> under armen til fest og hygge under Lillebeltsbroen. 
+        </p>
+        <h2 class="text-2xl font-bold mb-xs lg:text-5xl">Skal du med?</h2>
+        <BtnPrimary btn_primary="Køb billet"/>
+      </section>
+
+    </main>
+    <footer>
+      <Footer/>
+    </footer>
  
 
    
