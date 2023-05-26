@@ -3,14 +3,7 @@ import "../styles/style.css";
 
 import Navigation from "../components/Navigation.astro";
 import Footer from "../components/Footer.astro";
-import OverviewDropdown from "../components/OverviewDropdown.astro";
-import ProgramElement from "../components/ProgramElement.astro";
 import BtnPrimary from "../components/BtnPrimary.astro";
-import BtnSekundaryBlack from "../components/BtnSekundaryBlack.astro";
-import BtnSekundaryWhite from "../components/BtnSekundaryWhite.astro";
-import CardSingleview from "../components/CardSingleview.astro";
-import CardBillet from "../components/CardBillet.astro";
-import Contactform from "../components/Contactform.astro"
 import PosterLineup from "../components/PosterLineup.astro"
 ---
 
@@ -27,15 +20,66 @@ import PosterLineup from "../components/PosterLineup.astro"
     <header>
       <Navigation />
     </header>
-    <main class="min-h-screen mt-xl">
+    <main class="min-h-screen ">
+      <section class="flex flex-col justify-center items-center bg_hero h-screen gap-m -mt-56 ">
+        <img class="mt-xxl" src="/img/hero_LG.svg" alt="">
+        <BtnPrimary btn_primary="Køb billet"/>
+      </section>
+      <section class="mb-s md:mb-xxl">
       <PosterLineup/>
-      <footer>
-        <Footer />
-      </footer>
-      <script>
-        import "../scripts/menu.js";
-        import "../scripts/overviewDropdown.js";
-      </script>
+      </section>
+      <section class="grid md:grid-cols-3 md:mb-xxl mb-m lg:mb-xxl">
+<div class="col-span-2 mb-s">
+  <img class="w-full" src="/img/video.png" alt="">
+</div>
+<div class=" w-screen md:w-full">
+  <div class="flex items-center flex-col justify-center md:justify-normal md:items-start md:ml-xs mb-s">
+  <h1 class="text-xl lg:text-3xl font-bold md:mb-xs">HAR DU HUSKET BADETØJET?</h1>
+  <p class="">Her finder du alt, hvad du skal vide, inden vi ses!</p>
+</div>
+  <hr class="blueLine lg:mb-xs">
+  <a class="hover:no-underline" href="kort.html">
+  <h4 class=" hover:text-primary_blue ml-xs text-xl lg:text-3xl stroke font-bold" >Kort</h4>
+  </a>
+  <hr class="blueLine lg:mt-xs lg:mb-xs">
+  <a class="hover:no-underline" href="billeter.html">
+  <h4 class=" hover:text-primary_blue  ml-xs  text-xl lg:text-3xl stroke font-bold">Billettyper</h4>
+</a>
+<hr class="blueLine lg:mt-xs lg:mb-xs">
+  <a class="hover:no-underline" href="program.html">
+  <h4 class="hover:text-primary_blue  ml-xs text-xl lg:text-3xl stroke font-bold">Program</h4>
+</a>
+<hr class="blueLine lg:mt-xs lg:mb-xs">
+  <a class="hover:no-underline" href="praktisk.html">
+  <h4 class="hover:text-primary_blue  ml-xs text-xl lg:text-3xl stroke font-bold">Praktisk info</h4>
+</a>
+<hr class="blueLine lg:mt-xs ">
+
+</div>
+
+      </section>
+      <section class="grid md:grid-cols-3 lg:mb-xxl lg:gap-xs">
+        <div class="font-bold leading-none text-primary_orange ml-xs mb-xs text-6xl md:col-span-2 md:order-2 md:text-6xl lg:text-8xl">VI HAR <br> PLADS <br> TIL ALLE (!)</div>
+        <div class="flex flex-col gap-xxxs ml-xs mb-s  md:ml-xxl md:gap-xs ">
+          <h2 class="font-bold text-xl md:text-3xl lg:text-5xl">Læs mere om:</h2>
+          <a class="md:text-3xl" href="">Særlige behov & handicap</a>
+          <a class="md:text-3xl" href="">Alle aldre</a>
+          <a class="md:text-3xl" href="">Artister</a>
+          <a class="md:text-3xl" href="">Sikkerhed</a>
+          <a class="md:text-3xl" href="">Pas godt på hinanden</a>
+        </div>
+
+      </section>
+      <section class="bg_orange flex justify-center items-center lg:mb-xxl">
+        <h1 class="countdown stroke font-bold text-6xl mt-s mb-s md:mt-xl md:mb-xl md:text-8xl lg:text-9xl "></h1>
+      </section>
     </main>
+    <footer>
+        <Footer />
+    </footer>
+    <script>
+        import "../scripts/menu.js";
+        import "../scripts/countdown.js";
+    </script>   
   </body>
 </html>
