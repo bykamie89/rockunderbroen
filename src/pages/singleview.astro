@@ -3,7 +3,8 @@ import "../styles/style.css";
 
 import Navigation from "../components/Navigation.astro";
 import Footer from "../components/Footer.astro";
-import OverviewDropdown from "../components/OverviewDropdown.astro";
+import CardSingleview from "../components/CardSingleview.astro";
+
 
 ---
 
@@ -13,16 +14,38 @@ import OverviewDropdown from "../components/OverviewDropdown.astro";
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <title>Forside</title>
+    <title>Kunstner detaljer</title>
   </head>
-
-
-
   <body class="bg-beige_100 ">
     <header>
       <Navigation />
     </header>
      <main class="min-h-screen">
+<section class="singleViewBg flex -mt-24 items-end justify-end h-screen md:-mt-56">
+
+<CardSingleview artist="DREW SYCAMORE" tid="Fredag kl. 18"/>
+</section>
+<section class="mt-xs mb-m lg:mb-xl">
+  <h1></h1>
+</section>
+<section class="ml-xs mr-xs lg:ml-xxl">
+  <div>
+  <h2 class="text-xl font-bold mb-xxxs lg:text-4xl  ">Dansk musik popidol</h2>
+  <p class="mb-xs lg:mb-m">De seneste to år har Drew Sycamore etableret sig som én af dansk musik helt store popidoler. Med gedigne hits som ’45 Fahrenheit Girl’, ’Take It Back’, ‘I Wanna Be Dancing’, ‘Perfect Disaster’ og ‘Let Me Love You’ har hun spillet sig helt op i superligaen.</p>
+</div>
+<div>
+  <h2 class="text-xl font-bold mb-xxxs lg:text-4xl  ">Fremtiden bringer...</h2>
+  <p class="mb-xs lg:mb-m">Flere singler er på vej og i foråret 2023 udgiver Drew sit tredje album ’Masculina’. Så når hun rammer festivalerne næste sommer, så er det med endnu flere nye hits og et endnu større show.</p>
+</div>
+<div>
+  <h2 class="text-xl font-bold mb-xxxs lg:text-4xl  ">Nyeste singler</h2>
+  <p class="mb-xs lg:mb-m">Men tiden har ikke stået stille for powerpop-kunstneren, der allerede nu barsler med nye landeplager. Drew Sycamore er aktuel med singlerne ’Madonna’ og ’Electric Motion’, der begge har fået massiv airplay på de danske radiokanaler. Sidstnævnte lå #1 på airplay-listen seks uger over sommeren 2022.</p>
+</div>
+</section>
+
+
+
+
 
     </main>
     <footer>
@@ -30,7 +53,6 @@ import OverviewDropdown from "../components/OverviewDropdown.astro";
     </footer>
    <script>
       import "../scripts/menu.js";
-      import "../scripts/overviewDropdown.js";
    </script>
   </body>
 
