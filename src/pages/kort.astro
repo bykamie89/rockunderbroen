@@ -2,7 +2,7 @@
 import "../styles/style.css";
 
 import Navigation from "../components/Navigation.astro";
-
+import Footer from "../components/Footer.astro";
 ---
 
 <html lang="en">
@@ -12,23 +12,40 @@ import Navigation from "../components/Navigation.astro";
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
 
-    <title>Forside</title>
+    <title>Kort</title>
   </head>
-
-
 
   <body class="bg-beige_100">
     <header>
       <Navigation />
     </header>
- 
 
-   
-   <script>
-      import "../scripts/menu.js";
-   </script>
+    <main>
+      <section class="flex items-center flex-col mx-s mt-m md:mt-xl">
+        <img class="mb-xs lg:mb-xl" src="/img/kort_disp.svg" alt="Presse" />
+        <h1 class="text-xl font-bold mb-m text-center lg:text-5xl lg:mb-xxl">Et overblik over pladsen</h1>
+      </section>
+
+      <article>
+        <section class="md:flex md:flex-row md:gap-xs mx-xs">
+          <h2 class="text-3xl lg:text-5xl text-primary_black font-bold">Pladsen</h2>
+          <div>
+            <p class="text-primary_black my-xxxs">Rock Under Broen foregår under den nye Lillebæltsbro, Strandvejen i Middelfart.</p>
+            <p class="text-primary_black mb-xxxs">Dørene åbnes <span class="font-bold">kl. 15:00 om fredagen</span> og <span class="font-bold">kl. 11:00 om lørdagen. <br /></span> Pladsen <span class="font-bold">lukker ved midnat</span> begge dage.</p>
+          </div>
+        </section>
+        <section class="flex items-center flex-col mb-m">
+          <img src="/img/map.webp" alt="Kort over pladsen" />
+        </section>
+      </article>
+
+      <footer>
+        <Footer />
+      </footer>
+      <script>
+        import "../scripts/menu.js";
+        import "../scripts/overviewDropdown.js";
+      </script>
+    </main>
   </body>
-
 </html>
-
-
