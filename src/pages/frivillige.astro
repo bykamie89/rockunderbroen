@@ -2,7 +2,8 @@
 import "../styles/style.css";
 
 import Navigation from "../components/Navigation.astro";
-
+import Footer from "../components/Footer.astro";
+import Contactform from "../components/Contactform.astro";
 ---
 
 <html lang="en">
@@ -15,20 +16,35 @@ import Navigation from "../components/Navigation.astro";
     <title>Forside</title>
   </head>
 
-
-
   <body class="bg-beige_100">
     <header>
       <Navigation />
     </header>
- 
 
-   
-   <script>
-      import "../scripts/menu.js";
-   </script>
+    <main>
+      <section class="flex items-center flex-col mx-s mt-m md:mt-xl">
+        <img class="mb-xs lg:mb-xl" src="/img/frivillig_disp.svg" alt="Presse" />
+        <h1 class="text-xl font-bold mb-m text-center lg:text-5xl lg:mb-xxl">Vil du være frivillig?</h1>
+      </section>
+
+      <section class="mb-m md:mb-xxl">
+        <h2 class="text-3xl lg:text-4xl stroke font-bold ml-xs lg:ml-xxxl">Kontakt os</h2>
+        <Contactform />
+      </section>
+
+      <section class="mb-m">
+        <h2 class="text-3xl lg:text-4xl stroke font-bold ml-xs lg:ml-xxxl">Godt at vide</h2>
+        <p class="mx-xs lg:mx-xxxl">Vi beder vores frivillige personale om at arbejde minimum 8 timer under festivalen. <br /> Eller sammenlagt 10 timer ifm. opbygning eller nedtagning, hhv. før eller efter RUB.</p>
+        <p class="mt-xxxs mx-xs lg:mx-xxxl">Foreninger der stiller med frivillig personale aflønnes med kr. 80,- per time for voksne <br /> og kr. 60,- per time for unge under 18 år til foreningskassen.</p>
+      </section>
+
+      <footer>
+        <Footer />
+      </footer>
+      <script>
+        import "../scripts/menu.js";
+        import "../scripts/overviewDropdown.js";
+      </script>
+    </main>
   </body>
-
 </html>
-
-
