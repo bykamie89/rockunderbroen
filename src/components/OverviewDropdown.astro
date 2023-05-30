@@ -3,12 +3,12 @@ const title = Astro.props.title;
 ---
 
 <div class="grid grid-cols-4 mb-xs md:mb-s mt-xs md:mt-s">
-  <button type="button" class="infobox flex items-center gap-xxxs md:gap-m lg:gap-xl ml-xs mr-xxxs md:ml-xl md:mr-s lg:ml-xxl col-span-3 ">
+  <button type="button" class="infobox flex items-center gap-xxxs ml-xs mr-xxxs md:ml-xxl md:mr-s col-span-3 ">
     <img src="/img/openArrow.svg" class="testhall openArrow" alt="down arrow" />
   <p class="text-4xl order-2 md:text-5xl stroke font-bold text-left">{title}</p>
   </button>
-  <div class="content col-span-4 mb-xxs mt-xxs md:mb-s md:mt-xs md:ml-m md:mr-m lg:ml-xxl lg:mr-xxl">
-    <slot class="" name="beskrivelse" />
+  <div class="content col-span-4 mb-xxs mt-xxs md:mb-s md:mt-xs md:ml-m md:mr-m lg:pl-m lg:ml-xxl lg:mr-xxl ">
+    <slot name="beskrivelse" />
   </div>
 
 </div>
