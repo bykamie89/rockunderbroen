@@ -116,3 +116,7 @@ a:hover {
 .blueLine {
   border: 0.5px solid var(--primary_blue);
 }
+
+.rotate{
+  rotate: 180deg;
+}
