@@ -1,8 +1,7 @@
 // document.querySelector('.hamburger').addEventListener('click', () => {
 //   document.querySelector('.nav-links').classList.toggle('expanded');
 // });
-document.addEventListener('DOMContentLoaded', start);
-function start() {
+document.addEventListener('DOMContentLoaded', () => {
   const menu = document.querySelector('.menu');
   const menuItems = document.querySelectorAll('.menuItem');
   const menubtn = document.querySelector('.menu_toggle_btn');
@@ -26,4 +25,4 @@ function start() {
   menuItems.forEach(function (menuItem) {
     menuItem.addEventListener('click', toggleMenu);
   });
-}
+});
