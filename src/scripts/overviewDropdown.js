@@ -1,4 +1,4 @@
-document.addEventListener('load', () => {
+document.addEventListener('DOMContentLoaded', () => {
   var info = document.getElementsByClassName('infobox');
 
   var i;

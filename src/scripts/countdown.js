@@ -1,4 +1,4 @@
-document.addEventListener('load', () => {
+document.addEventListener('DOMContentLoaded', () => {
   const countdowntag = document.querySelector('.countdown');
   // Set the date we're counting down to
   var countDownDate = new Date('Jun 9, 2023 15:00:00').getTime();
