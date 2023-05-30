@@ -1,6 +1,3 @@
-// document.querySelector('.hamburger').addEventListener('click', () => {
-//   document.querySelector('.nav-links').classList.toggle('expanded');
-// });
 document.addEventListener('DOMContentLoaded', () => {
   const menu = document.querySelector('.menu');
   const menuItems = document.querySelectorAll('.menuItem');
