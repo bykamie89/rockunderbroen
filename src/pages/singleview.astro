@@ -25,7 +25,10 @@ import CardSingleview from "../components/CardSingleview.astro";
 
 <CardSingleview artist="DREW SYCAMORE" tid="Fredag kl. 18"/>
 </section>
-<section class="mt-xs mb-m lg:mb-xl">
+<section class="">
+  <marquee class="w-full h-full text-8xl text-beige_200 font-bold" direction="left" scrollamount="12"  >
+    DREW SYCAMORE     DREW SYCAMORE    DREW SYCAMORE
+    </marquee>
   <h1></h1>
 </section>
 <section class="ml-xs mr-xs lg:ml-xxl">
@@ -47,7 +50,7 @@ import CardSingleview from "../components/CardSingleview.astro";
     <footer>
       <Footer/>
     </footer>
-   <script>
+   <script is:inline>
       import "../scripts/menu.js";
    </script>
   </body>
