@@ -39,6 +39,8 @@ p,
 a {
   font-family: Helvetica;
   line-height: 1.6;
+  color: var(--primary_black);
+  
 }
 
 .h1 {
@@ -69,11 +71,12 @@ a {
 }
 p {
   font-size: 1rem;
-  max-width: 65ch;
+  max-width: 70ch;
+  color: var(--primary_black);
 }
 a {
   font-size: 1rem;
-  
+  color: var(--primary_black);
   
 }
 a:hover {
@@ -121,3 +124,4 @@ a:hover {
 .rotate{
   rotate: 180deg;
 }
+

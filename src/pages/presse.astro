@@ -4,7 +4,7 @@ import "../styles/style.css";
 import Navigation from "../components/Navigation.astro";
 import Footer from "../components/Footer.astro";
 import OverviewDropdown from "../components/OverviewDropdown.astro";
-import Contactform from "../components/Contactform.astro";
+import BtnSekundaryBlack from "../components/BtnSekundaryBlack.astro";
 ---
 
 <html lang="en">
@@ -28,24 +28,57 @@ import Contactform from "../components/Contactform.astro";
         <h1 class="text-xl font-bold mb-m text-center lg:text-5xl lg:mb-xxl">Vi byder pressen velkommen!</h1>
       </section>
       <section class="mb-xs md:mb-xl">
-        <OverviewDropdown overskrift="Krav">
+        <OverviewDropdown title="Krav">
           <p slot="beskrivelse">I 2023 kan man betale kort i alle barer på pladsen. <br /> Vi modtager alle korttyper. Det vil også være muligt at benytte Google- og Apple Pay Herudover vil det være muligt at forkøbe drikkevarer drikkevarer på vores app, som kan indløses i alle vores barer. Du kan IKKE betale MobilePay.</p>
         </OverviewDropdown>
-        <OverviewDropdown overskrift="Check-in">
+        <hr class="blueLine" />
+        <OverviewDropdown title="Check-in">
           <p slot="beskrivelse">Henrik Zederkof tiltræder som bestyrelsens nye næstformand, mens Jesper Sune Hansen vil være Rock under Broens nye kasserer. Sammen med siddende bestyrelsesmedlem Lykke Henriksen får Jesper Holmen ansvar for miljø, bæredygtighed og de frivillige. Peter Zederkof fortsætter som musikansvarlig samt pladsansvarlig og Martin Beyer som ansvarlig for markedsføring og kommunikation på de sociale medier.</p>
         </OverviewDropdown>
-        <OverviewDropdown overskrift="Pressetelt">
+        <hr class="blueLine" />
+        <OverviewDropdown title="Pressetelt">
           <p slot="beskrivelse">Når de musikglade gæster skal slukke tørsten til Rock Under Broen, bliver det igen med Tuborg i hanerne. Tuborg og Rock Under Broen har nemlig forlænget samarbejdet med fem år. Til næste år kan de musikglade gæster slukke tørsten i andet end kolde Tuborg. Man har nemlig også indgået en aftale om at udvide sortimentet med det populære Bluetail-koncept, som består af økologiske cocktail-varianter på fad.</p>
         </OverviewDropdown>
-        <OverviewDropdown overskrift="Betingelser">
+        <hr class="blueLine" />
+        <OverviewDropdown title="Betingelser">
           <p slot="beskrivelse">Efter at have været aktiv for Rock Under Broen hen over tre årtier har Bent Frandsen, formand for Rock Under Broen, besluttet sig for at stoppe, mens legen er god. Sommerens to festdage i juni 2022 blev en overvældende succes for alle de frivillige, kunstnerne og holdet bag ved Rock Under Broen. – Nu skal vi hjælpe det hele godt videre. For Vagn Ove Hansen og Claus Hansen stopper også. Det unge team skal til at fylde badekarret op med frisk vand, og vi byder dem velkommen i spidsen for en af Danmarks mest solide endagsfestivaller.</p>
         </OverviewDropdown>
-        <OverviewDropdown overskrift="Kontakt">
+        <hr class="blueLine" />
+        <OverviewDropdown title="Kontakt">
           <p slot="beskrivelse">Bent Nygaard er gået bort, vores tanker går til hele hans familie. Bent var en stor hjælp for Rock under Broen siden starten i 1989 og frem til 2006 hvor han som den første og eneste er blevet kåret til præsident for rock under broen for hans store indsats. Der er ikke noget i denne verden Bent ikke nåede da han lagde kaptajns kasketten onsdag nat. Bent er taget af sted på sin sidste sejltur, og vi ønsker ham god vind i sejlene.</p>
         </OverviewDropdown>
+        <hr class="blueLine" />
       </section>
       <section class="mb-m md:mb-xxl">
-        <Contactform />
+        <form class="border-2 border-primary_blue mr-xs ml-xs lg:mr-xxxl lg:ml-xxxl bg-beige_200 rounded-lg px-xxs py-xxs md:py-s md:px-s">
+          <div class="flex gap-xxs justify-between items-center">
+          <p class="text-xl lg:text-2xl font-bold">Personlige oplysninger</p>
+          <img src="/img/openArrow.svg" alt="open arrow">
+        </div>
+        <p class=" mb-xs lg:mb-s">*Skal udfyldes</p>
+          <label class="text-xl lg:text-2xl font-bold" for="fnavn">Fulde navn*</label>
+          <input class=" border-2 border-primary_blue w-full h-s rounded-lg bg-primary_white pl-xxxs mb-xs lg:mb-s" type="text" id="fnavn" name="fuldenavn" placeholder="John Doe">
+      
+          <label class="text-xl lg:text-2xl font-bold" for="email">Email*</label>
+          <input class=" border-2 border-primary_blue w-full h-s rounded-lg bg-primary_white pl-xxxs mb-xs lg:mb-s" type="email" id="Email" name="Email" placeholder="Jd@gmail.com">
+      
+          <label class=" text-xl lg:text-2xl font-bold" for="tlf">Tlf*</label>
+          <input class=" border-2 border-primary_blue w-full h-s rounded-lg bg-primary_white pl-xxxs mb-xs lg:mb-s" type="tel" id="tlf" name="tlf" placeholder="+45 11223344">
+          <BtnSekundaryBlack btn_sekundary="Send besked"/>
+        </form>
+        <div class="border-2 border-primary_blue mr-xs ml-xs mt-xs mb-xs bg-beige_200 rounded-lg px-xxs py-xxs  md:mt-m md:mb-m md:py-xs md:px-xs lg:mr-xxxl lg:ml-xxxl lg:mt-xl lg:mb-xl lg:py-s lg:-px-s ">
+          <div class="flex gap-xxs justify-between items-center">
+            <p class="text-xl lg:text-2xl font-bold">Medie oplysninger</p>
+            <img src="/img/openArrow.svg" alt="open arrow">
+          </div>
+        </div>
+        <div class="border-2 border-primary_blue mr-xs ml-xs lg:mr-xxxl lg:ml-xxxl bg-beige_200 rounded-lg px-xxs py-xxs md:py-s md:px-s lg:py-m lg:-px-m">
+          <div class="flex gap-xxs justify-between items-center">
+            <p class="text-xl lg:text-2xl font-bold">Bemærkninger</p>
+            <img src="/img/openArrow.svg" alt="open arrow">
+          </div>
+        </div>
+
       </section>
     </main>
         <Footer />

@@ -1,16 +1,16 @@
 ---
 import BtnSekundaryBlack from "../components/BtnSekundaryBlack.astro";
+import "../styles/style.css";
 ---
 
-<div class=" border-2 border-primary_blue mr-xs ml-xs lg:mr-xxxl lg:ml-xxxl bg-beige_200 rounded-lg px-xs py-xs md:py-m md:px-m lg:py-xl lg:-px-xl">
-    <form action="/action_page.php">
-      <label class="text-xl lg:text-2xl font-bold" for="fnavn">Fulde navn</label>
+    <form class="border-2 border-primary_blue mr-xs ml-xs lg:mr-xxxl lg:ml-xxxl bg-beige_200 rounded-lg px-xs py-xs md:py-m md:px-m lg:py-xl lg:-px-xl" action="/action_page.php">
+      <label class="text-xl lg:text-2xl font-bold" for="fnavn">Fulde navn*</label>
       <input class=" border-2 border-primary_blue w-full h-s rounded-lg bg-primary_white pl-xxxs mb-xs lg:mb-s" type="text" id="fnavn" name="fuldenavn" placeholder="John Doe">
   
-      <label class="text-xl lg:text-2xl font-bold" for="email">Email</label>
+      <label class="text-xl lg:text-2xl font-bold" for="email">Email*</label>
       <input class=" border-2 border-primary_blue w-full h-s rounded-lg bg-primary_white pl-xxxs mb-xs lg:mb-s" type="email" id="Email" name="Email" placeholder="Jd@gmail.com">
   
-      <label class=" text-xl lg:text-2xl font-bold" for="tlf">Email</label>
+      <label class=" text-xl lg:text-2xl font-bold" for="tlf">Telefon nr.*</label>
       <input class=" border-2 border-primary_blue w-full h-s rounded-lg bg-primary_white pl-xxxs mb-xs lg:mb-s" type="tel" id="tlf" name="tlf" placeholder="+45 11223344">
   
   
@@ -20,4 +20,3 @@ import BtnSekundaryBlack from "../components/BtnSekundaryBlack.astro";
       <BtnSekundaryBlack btn_sekundary="Send besked"/>
       
     </form>
-  </div>
