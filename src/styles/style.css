@@ -101,7 +101,7 @@ a:hover {
 }
 
 .stroke {
-  color: #fff9f2;
+  color: var(--beige_100);
   -webkit-text-stroke: 2px var(--primary_blue);
 }
 
