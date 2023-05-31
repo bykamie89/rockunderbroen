@@ -5,6 +5,7 @@ module.exports = {
     colors: {
       primary_blue: '#003bdd',
       primary_orange: '#ff5b22',
+      beige_text: '#fff9f2',
       beige_100: '#ffefdd',
       beige_200: '#ffd098',
       beige_300: '#bc7016',
