@@ -100,6 +100,12 @@ a:hover {
   background-position: center;
 }
 
+.bgPosterLineup{
+  background-image: url("/img/poster_img.webp");
+  background-size: cover;
+  background-position: center;
+}
+
 .stroke {
   color: var(--beige_100);
   -webkit-text-stroke: 2px var(--primary_blue);
