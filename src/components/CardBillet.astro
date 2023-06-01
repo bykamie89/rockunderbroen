@@ -1,20 +1,25 @@
 ---
-import "../styles/style.css";
-import BtnPrimary from "../components/BtnPrimary.astro";
-const { title, date, opening, price } = Astro.props;
+import '../styles/style.css';
+import BtnPrimary from '../components/BtnPrimary.astro';
+const { title, date, opening, price, yderligereInfo } = Astro.props;
 ---
 
-<article class=" w-fit px-xs py-xs bg-beige_100 border-4 border-primary_blue rounded-xl">
-  <h1 class="leading-none stroke_billettype font-bold text-4xl">{title}</h1>
-  <h2 class="text-primary_blue font-bold text-xl my-xxxs">{date}</h2>
-  <p class="text-primary_black">{opening}</p>
-  <div class="flex items-baseline my-xs gap-1">
-    <p class="text-primary_blue font-bold text-3xl">{price}</p>
-    <p class="text-sm">excl. Gebyr</p>
+<article
+  class='w-xxxxl h-xxxxxl px-xs py-xs bg-beige_100 border-4 border-primary_blue rounded-xl'
+>
+  <h1 class='leading-none stroke_billettype font-bold text-4xl'>{title}</h1>
+  <h2 class='text-primary_blue font-bold text-xl my-xxxs'>{date}</h2>
+  <p class='text-primary_black'>{opening}</p>
+  <div class='flex items-baseline my-xs gap-1'>
+    <p class='text-primary_blue font-bold text-3xl'>{price}</p>
+    <p class='text-sm'>excl. Gebyr</p>
   </div>
-  <p class="mb-xxxs text-primary_black text-sm">*Der tages forbehold for eventuelle ændringer</p>
-  <div class="flex justify-center">
-    <BtnPrimary btn_primary="Køb billet" />
+  <p class='mb-xxxs text-primary_black text-sm'>{yderligereInfo}</p>
+  <p class='mb-xxxs text-primary_black text-sm'>
+    *Der tages forbehold for eventuelle ændringer
+  </p>
+  <div class='flex justify-center'>
+    <BtnPrimary btn_primary='Køb billet' />
   </div>
 </article>
 

@@ -37,6 +37,8 @@ module.exports = {
         xl: '6rem',
         xxl: '10rem',
         xxxl: '15rem',
+        xxxxl: '22rem',
+        xxxxxl: '30rem',
       },
     },
   },
