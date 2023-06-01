@@ -1,83 +1,111 @@
 ---
-import "../styles/style.css";
+import '../styles/style.css';
 
-import Navigation from "../components/Navigation.astro";
-import Footer from "../components/Footer.astro";
-import BtnPrimary from "../components/BtnPrimary.astro";
-import PosterLineup from "../components/PosterLineup.astro"
-import Cookiebox from "../components/Cookiebox.astro";
+import Navigation from '../components/Navigation.astro';
+import Footer from '../components/Footer.astro';
+import BtnPrimary from '../components/BtnPrimary.astro';
+import PosterLineup from '../components/PosterLineup.astro';
+import Cookiebox from '../components/Cookiebox.astro';
 ---
 
-<html lang="en">
+<html lang='en'>
   <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-    <meta name="description" content="Front page for a summer music festival with complete lineup and tickets available for purchase.">
+    <meta charset='utf-8' />
+    <link rel='icon' type='image/svg+xml' href='/favicon.svg' />
+    <meta name='viewport' content='width=device-width' />
+    <meta name='generator' content={Astro.generator} />
+    <meta
+      name='description'
+      content='Front page for a summer music festival with complete lineup and tickets available for purchase.'
+    />
+    <meta name='robots' content='noindex' />
 
     <title>Forside</title>
   </head>
 
-  <body class="bg-beige_100">
-    <Cookiebox/>
+  <body class='bg-beige_100'>
+    <Cookiebox />
     <header>
       <Navigation />
     </header>
 
-    <main class="min-h-screen ">
-      <section class="flex flex-col justify-center items-center bg_hero h-screen gap-m -mt-56 pb-xs md:pb-m">
-        <img class="mt-xxl" src="/img/hero_LG.svg" alt="">
-        <div class="lg:mb-xl">
-          <a href="/billetter">
-        <BtnPrimary btn_primary="Køb billet"/></a>
-      </div>
-      </section>
-      <section class="mb-s md:mb-xxl">
-      <PosterLineup/>
-      </section>
-      <section class="grid md:grid-cols-3 md:mb-xxl mb-m lg:mb-xxl">
-<div class="col-span-2 mb-s">
-  <img class="w-full" src="/img/video.png" alt="">
-</div>
-<div class=" w-screen md:w-full">
-  <div class="flex items-center flex-col justify-center md:justify-normal md:items-start md:ml-xs mb-s">
-  <h1 class="text-xl lg:text-3xl font-bold md:mb-xs">HAR DU HUSKET BADETØJET?</h1>
-  <p class="">Her finder du alt, hvad du skal vide, inden vi ses!</p>
-</div>
-  <hr class="blueLine lg:mb-xs">
-  <a class="hover:no-underline hover:text-primary_blue ml-xs text-4xl lg:text-6xl stroke font-bold" href="/kort">Kort</a>
-  <hr class="blueLine lg:mt-xs lg:mb-xs">
-  <a class="hover:no-underline hover:text-primary_blue  ml-xs  text-4xl lg:text-6xl stroke font-bold" href="/billeter">Billettyper</a>
-<hr class="blueLine lg:mt-xs lg:mb-xs">
-  <a class="hover:no-underline hover:text-primary_blue  ml-xs text-4xl lg:text-6xl stroke font-bold " href="/program">Program</a>
-<hr class="blueLine lg:mt-xs lg:mb-xs">
-  <a class="hover:no-underline hover:text-primary_blue  ml-xs text-4xl lg:text-6xl stroke font-bold" href="/praktisk">Praktisk info</a>
-<hr class="blueLine lg:mt-xs ">
-</div>
-
-      </section>
-      <section class="grid md:grid-cols-3 lg:mb-xxl lg:gap-xs">
-        <div class="font-bold leading-none text-primary_orange ml-xs mb-xs text-6xl md:col-span-2 md:order-2 md:text-6xl lg:text-8xl">VI HAR <br> PLADS <br> TIL ALLE (!)</div>
-        <div class="flex flex-col gap-xxxs ml-xs mb-s  md:ml-xxl md:gap-xs ">
-          <h2 class="font-bold text-xl md:text-3xl lg:text-5xl">Læs mere om:</h2>
-          <a class="md:text-3xl" href="/praktisk">Særlige behov & handicap</a>
-          <a class="md:text-3xl" href="/Biletter">Alle aldre</a>
-          <a class="md:text-3xl" href="/program">Artister</a>
-          <a class="md:text-3xl" href="/praktisk">Sikkerhed</a>
-          <a class="md:text-3xl" href="/praktisk">Pas godt på hinanden</a>
+    <main class='min-h-screen'>
+      <section
+        class='flex flex-col justify-center items-center bg_hero h-screen gap-m -mt-56 pb-xs md:pb-m'
+      >
+        <img class='mt-xxl' src='/img/hero_LG.svg' alt='' />
+        <div class='lg:mb-xl'>
+          <a href='/billetter'> <BtnPrimary btn_primary='Køb billet' /></a>
         </div>
-
       </section>
-      <section class="bg_orange flex justify-center items-center lg:mb-xxl">
-        <h1 class="countdown stroke font-bold text-6xl mt-s mb-s md:mt-xl md:mb-xl md:text-8xl lg:text-9xl "></h1>
+      <section class='mb-s md:mb-xxl'>
+        <PosterLineup />
+      </section>
+      <section class='grid md:grid-cols-3 md:mb-xxl mb-m lg:mb-xxl'>
+        <div class='flex items-center flex-col justify-center'>
+          <h1 class='text-xl lg:text-3xl font-bold md:mb-xs'>
+            HAR DU HUSKET BADETØJET?
+          </h1>
+          <p class=''>Her finder du alt, hvad du skal vide, inden vi ses!</p>
+        </div>
+        <div class='col-span-2 mb-s'>
+          <video width='100%' height='100%' controls>
+            <source src='MUB_2018.mp4' type='video/mp4' />
+
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div class='w-screen md:w-full'>
+          <hr class='blueLine lg:mb-xs' />
+          <a
+            class='hover:no-underline hover:text-primary_blue ml-xs text-4xl lg:text-6xl stroke font-bold'
+            href='/kort'>Kort</a
+          >
+          <hr class='blueLine lg:mt-xs lg:mb-xs' />
+          <a
+            class='hover:no-underline hover:text-primary_blue ml-xs text-4xl lg:text-6xl stroke font-bold'
+            href='/billeter'>Billettyper</a
+          >
+          <hr class='blueLine lg:mt-xs lg:mb-xs' />
+          <a
+            class='hover:no-underline hover:text-primary_blue ml-xs text-4xl lg:text-6xl stroke font-bold'
+            href='/program'>Program</a
+          >
+          <hr class='blueLine lg:mt-xs lg:mb-xs' />
+          <a
+            class='hover:no-underline hover:text-primary_blue ml-xs text-4xl lg:text-6xl stroke font-bold'
+            href='/praktisk'>Praktisk info</a
+          >
+          <hr class='blueLine lg:mt-xs' />
+        </div>
+      </section>
+      <section class='grid md:grid-cols-3 lg:mb-xxl lg:gap-xs'>
+        <div
+          class='font-bold leading-none text-primary_orange ml-xs mb-xs text-6xl md:col-span-2 md:order-2 md:text-6xl lg:text-8xl'
+        >
+          VI HAR <br /> PLADS <br /> TIL ALLE (!)
+        </div>
+        <div class='flex flex-col gap-xxxs ml-xs mb-s md:ml-xxl md:gap-xs'>
+          <h2 class='font-bold text-xl md:text-3xl lg:text-5xl'>
+            Læs mere om:
+          </h2>
+          <a class='md:text-3xl' href='/praktisk'>Særlige behov & handicap</a>
+          <a class='md:text-3xl' href='/Biletter'>Alle aldre</a>
+          <a class='md:text-3xl' href='/program'>Artister</a>
+          <a class='md:text-3xl' href='/praktisk'>Sikkerhed</a>
+          <a class='md:text-3xl' href='/praktisk'>Pas godt på hinanden</a>
+        </div>
+      </section>
+      <section class='bg_orange flex justify-center items-center lg:mb-xxl'>
+        <h1
+          class='countdown stroke font-bold text-6xl mt-s mb-s md:mt-xl md:mb-xl md:text-8xl lg:text-9xl'
+        >
+        </h1>
       </section>
     </main>
-    
-        <Footer />
-    
-    <script src="../scripts/all.js"></script>
-    
+
+    <Footer />
+
+    <script src='../scripts/all.js'></script>
   </body>
-  
 </html>

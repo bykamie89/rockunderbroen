@@ -1,55 +1,66 @@
 ---
-import "../styles/style.css";
+import '../styles/style.css';
 
-import Navigation from "../components/Navigation.astro";
-import Footer from "../components/Footer.astro";
+import Navigation from '../components/Navigation.astro';
+import Footer from '../components/Footer.astro';
 ---
 
-<html lang="en">
+<html lang='en'>
   <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-    <meta name="description" content="This page is a map of the festival showing attendees where the stage, food, toilettes and beach is located for the music festival.">
+    <meta charset='utf-8' />
+    <link rel='icon' type='image/svg+xml' href='/favicon.svg' />
+    <meta name='viewport' content='width=device-width' />
+    <meta name='generator' content={Astro.generator} />
+    <meta
+      name='description'
+      content='This page is a map of the festival showing attendees where the stage, food, toilettes and beach is located for the music festival.'
+    />
+    <meta name='robots' content='noindex' />
     <title>Kort</title>
   </head>
 
-  <body class="bg-beige_100">
+  <body class='bg-beige_100'>
     <header>
       <Navigation />
     </header>
 
     <main>
-      <section class="flex items-center flex-col mx-s mt-m md:mt-xl">
-        <img class="mb-xs lg:mb-xl" src="/img/kort_disp.svg" alt="Kort" />
-        <h1 class="text-xl font-bold mb-m text-center lg:text-5xl lg:mb-xxl">Et overblik over pladsen</h1>
+      <section class='flex items-center flex-col mx-s mt-m md:mt-xl'>
+        <img class='mb-xs lg:mb-xl' src='/img/kort_disp.svg' alt='Kort' />
+        <h1 class='text-xl font-bold mb-m text-center lg:text-5xl lg:mb-xxl'>
+          Et overblik over pladsen
+        </h1>
       </section>
 
       <article>
-        <section class="flex md:flex-row md:gap-xs mx-xs justify-center mb-xxs md:mb-s">
-          <h2 class="text-3xl lg:text-5xl text-primary_black font-bold">Pladsen</h2>
+        <section
+          class='flex md:flex-row md:gap-xs mx-xs justify-center mb-xxs md:mb-s'
+        >
+          <h2 class='text-3xl lg:text-5xl text-primary_black font-bold'>
+            Pladsen
+          </h2>
           <div>
-            <p class="text-primary_black my-xxxs">Musik Under Broen foregår under den nye Lillebæltsbro, Strandvejen i Middelfart.</p>
-            <p class="text-primary_black mb-xxxs">Dørene åbnes 
-              <span class="font-bold">kl. 15:00 om fredagen</span>
-              og 
-              <span class="font-bold">kl. 11:00 om lørdagen. <br ></span> 
-              Pladsen 
-              <span class="font-bold">lukker ved midnat</span>
-              begge dage.</p>
+            <p class='text-primary_black my-xxxs'>
+              Musik Under Broen foregår under den nye Lillebæltsbro, Strandvejen
+              i Middelfart.
+            </p>
+            <p class='text-primary_black mb-xxxs'>
+              Dørene åbnes
+              <span class='font-bold'>kl. 15:00 om fredagen</span>
+              og
+              <span class='font-bold'>kl. 11:00 om lørdagen. <br /></span>
+              Pladsen
+              <span class='font-bold'>lukker ved midnat</span>
+              begge dage.
+            </p>
           </div>
         </section>
-        <section class="flex items-center flex-col mb-m">
-          <img src="/img/map.webp" alt="Kort over pladsen"/>
+        <section class='flex items-center flex-col mb-m'>
+          <img src='/img/map.webp' alt='Kort over pladsen' />
         </section>
       </article>
-
-
-   
-      
     </main>
     <Footer />
-    <script src="../scripts/all.js"></script>
+    <script src='../scripts/all.js'></script>
   </body>
 </html>

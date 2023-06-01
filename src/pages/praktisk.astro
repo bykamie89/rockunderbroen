@@ -1,67 +1,115 @@
 ---
-import "../styles/style.css";
+import '../styles/style.css';
 
-import Navigation from "../components/Navigation.astro";
-import Footer from "../components/Footer.astro";
-import OverviewDropdown from "../components/OverviewDropdown.astro";
+import Navigation from '../components/Navigation.astro';
+import Footer from '../components/Footer.astro';
+import OverviewDropdown from '../components/OverviewDropdown.astro';
 ---
 
-<html lang="en">
+<html lang='en'>
   <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-    <meta name="description" content="Page with all the practical information that is needed to attend the summer music festival including payment, safety and hadicapfacilities">
-
+    <meta charset='utf-8' />
+    <link rel='icon' type='image/svg+xml' href='/favicon.svg' />
+    <meta name='viewport' content='width=device-width' />
+    <meta name='generator' content={Astro.generator} />
+    <meta
+      name='description'
+      content='Page with all the practical information that is needed to attend the summer music festival including payment, safety and hadicapfacilities'
+    />
+    <meta name='robots' content='noindex' />
     <title>Praktisk info</title>
   </head>
 
-  <body class="bg-beige_100">
+  <body class='bg-beige_100'>
     <header>
       <Navigation />
     </header>
 
     <main>
-      <section class="flex items-center flex-col mx-s mt-m md:mt-xl">
-        <img class="mb-xs lg:mb-xl" src="/img/praktisk_info_disp.svg" alt="Nyheder" />
-        <h1 class="text-xl font-bold mb-m text-center lg:text-5xl lg:mb-xl">Alt det praktiske <br /> samlet ét sted</h1>
+      <section class='flex items-center flex-col mx-s mt-m md:mt-xl'>
+        <img
+          class='mb-xs lg:mb-xl'
+          src='/img/praktisk_info_disp.svg'
+          alt='Nyheder'
+        />
+        <h1 class='text-xl font-bold mb-m text-center lg:text-5xl lg:mb-xl'>
+          Alt det praktiske <br /> samlet ét sted
+        </h1>
       </section>
-      <section class="mb-m">
-        <OverviewDropdown title="Betaling">
-          <p slot="beskrivelse">I 2023 kan man betale kort i alle barer på pladsen. <br /> Vi modtager alle korttyper. Det vil også være muligt at benytte Google- og Apple Pay Herudover vil det være muligt at forkøbe drikkevarer drikkevarer på vores app, som kan indløses i alle vores barer. Du kan IKKE betale MobilePay.</p>
+      <section class='mb-m'>
+        <OverviewDropdown title='Betaling'>
+          <p slot='beskrivelse'>
+            I 2023 kan man betale kort i alle barer på pladsen. <br /> Vi modtager
+            alle korttyper. Det vil også være muligt at benytte Google- og Apple
+            Pay Herudover vil det være muligt at forkøbe drikkevarer drikkevarer
+            på vores app, som kan indløses i alle vores barer. Du kan IKKE betale
+            MobilePay.
+          </p>
         </OverviewDropdown>
-        <hr class="blueLine" />
-        <OverviewDropdown title="Mad, drikke & opvarmning">
-          <p slot="beskrivelse">Middelfart er klar til Rock Under Broen. Byens butikker, cafeer og spisesteder er åbne. På pladsen finder du eventområder, barer og madboder med et stort bredt udvalg. Til Rock Under Broen serveres selvfølgelig kun alkohol til personer over 18 år. Husk derfor et gyldigt billed-ID hvis du ønsker at købe alkohol til Rock Under Broen.</p>
+        <hr class='blueLine' />
+        <OverviewDropdown title='Mad, drikke & opvarmning'>
+          <p slot='beskrivelse'>
+            Middelfart er klar til Rock Under Broen. Byens butikker, cafeer og
+            spisesteder er åbne. På pladsen finder du eventområder, barer og
+            madboder med et stort bredt udvalg. Til Rock Under Broen serveres
+            selvfølgelig kun alkohol til personer over 18 år. Husk derfor et
+            gyldigt billed-ID hvis du ønsker at købe alkohol til Rock Under
+            Broen.
+          </p>
         </OverviewDropdown>
-        <hr class="blueLine " />
-        <OverviewDropdown title="Garderobe & hittegods">
-          <p slot="beskrivelse">Der er garderobe tæt ved hovedindgangen, hvor man for 20,- kan få opbevaret sine ting sikkert. Der vil også være bagagebokse tæt ved indgangen. Her er prisen ligeledes 20,-. Fundne værdigenstande afleveres til informationen. Mobiltelefoner, punge, ure, smykker og lign. indleveres til politiet hurtigst muligt efter festivalen er lukket. Tøj, tasker og uafhentede ting fra garderoben afleveres til Hittegodskontoret i Middelfart ved førstkommende lejlighed efter Rock Under Broen. Vi deler også opslag på Facebook af glemte ting i dagene efter.</p>
+        <hr class='blueLine' />
+        <OverviewDropdown title='Garderobe & hittegods'>
+          <p slot='beskrivelse'>
+            Der er garderobe tæt ved hovedindgangen, hvor man for 20,- kan få
+            opbevaret sine ting sikkert. Der vil også være bagagebokse tæt ved
+            indgangen. Her er prisen ligeledes 20,-. Fundne værdigenstande
+            afleveres til informationen. Mobiltelefoner, punge, ure, smykker og
+            lign. indleveres til politiet hurtigst muligt efter festivalen er
+            lukket. Tøj, tasker og uafhentede ting fra garderoben afleveres til
+            Hittegodskontoret i Middelfart ved førstkommende lejlighed efter
+            Rock Under Broen. Vi deler også opslag på Facebook af glemte ting i
+            dagene efter.
+          </p>
         </OverviewDropdown>
-        <hr class="blueLine" />
-        <OverviewDropdown title="Toiletter">
-          <p slot="beskrivelse">Du finder toiletter til fri afbenyttelse på pladsen. Alle toiletter kan benyttes gratis og rengøres jævnligt.</p>
-        </OverviewDropdown>  
-        <hr class="blueLine" />
-        <OverviewDropdown title="Sikkerhed">
-          <p slot="beskrivelse">Pladsen er videoovervåget, og alle henstillinger fra politi, kontrollører og ledelse skal følges. I tilfælde af en nødsituation – bevar roen og følg informationerne fra scenen.</p>
+        <hr class='blueLine' />
+        <OverviewDropdown title='Toiletter'>
+          <p slot='beskrivelse'>
+            Du finder toiletter til fri afbenyttelse på pladsen. Alle toiletter
+            kan benyttes gratis og rengøres jævnligt.
+          </p>
         </OverviewDropdown>
-        <hr class="blueLine" />
-        <OverviewDropdown title="Affald & naboer">
-          <p slot="beskrivelse">Hjælp med at holde pladsen ren og pas på vores naboer. Hvis vi alle gør en indsats, vil vi have en plads, vi kan være bekendt, og som er et rart sted for os alle at være.</p>
+        <hr class='blueLine' />
+        <OverviewDropdown title='Sikkerhed'>
+          <p slot='beskrivelse'>
+            Pladsen er videoovervåget, og alle henstillinger fra politi,
+            kontrollører og ledelse skal følges. I tilfælde af en nødsituation –
+            bevar roen og følg informationerne fra scenen.
+          </p>
         </OverviewDropdown>
-        <hr class="blueLine" />
-        <OverviewDropdown title="Pas godt på hinanden">
-          <p slot="beskrivelse">Med mange tusinde koncertgæster i byen kan du risikere ventetid, f.eks. når du skal hjem fra koncerten. Byens diskoteker har åben efter koncerten. En festlig dag til Rock Under Broen med sommer, glade gæster og musik er ofte forbundet med alkohol. Vi opfordrer til at alle passer på hinanden, og at du indtager alkohol med måde.</p>
+        <hr class='blueLine' />
+        <OverviewDropdown title='Affald & naboer'>
+          <p slot='beskrivelse'>
+            Hjælp med at holde pladsen ren og pas på vores naboer. Hvis vi alle
+            gør en indsats, vil vi have en plads, vi kan være bekendt, og som er
+            et rart sted for os alle at være.
+          </p>
         </OverviewDropdown>
-        <hr class="blueLine" />
+        <hr class='blueLine' />
+        <OverviewDropdown title='Pas godt på hinanden'>
+          <p slot='beskrivelse'>
+            Med mange tusinde koncertgæster i byen kan du risikere ventetid,
+            f.eks. når du skal hjem fra koncerten. Byens diskoteker har åben
+            efter koncerten. En festlig dag til Rock Under Broen med sommer,
+            glade gæster og musik er ofte forbundet med alkohol. Vi opfordrer
+            til at alle passer på hinanden, og at du indtager alkohol med måde.
+          </p>
+        </OverviewDropdown>
+        <hr class='blueLine' />
       </section>
     </main>
 
-        <Footer />
+    <Footer />
 
-        <script src="../scripts/all.js"></script>
-   
+    <script src='../scripts/all.js'></script>
   </body>
 </html>

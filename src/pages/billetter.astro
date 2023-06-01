@@ -1,69 +1,109 @@
 ---
-import "../styles/style.css";
+import '../styles/style.css';
 
-import Navigation from "../components/Navigation.astro";
-import Footer from "../components/Footer.astro";
-import CardBillet from "../components/CardBillet.astro";
-import PosterLineup from "../components/PosterLineup.astro";
-
+import Navigation from '../components/Navigation.astro';
+import Footer from '../components/Footer.astro';
+import CardBillet from '../components/CardBillet.astro';
+import PosterLineup from '../components/PosterLineup.astro';
 ---
 
-<html lang="en">
+<html lang='en'>
   <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-    <meta name="description" content="Ticket page with various types of tickets available for purchase for a summer music festival with complete lineup.">
-
+    <meta charset='utf-8' />
+    <link rel='icon' type='image/svg+xml' href='/favicon.svg' />
+    <meta name='viewport' content='width=device-width' />
+    <meta name='generator' content={Astro.generator} />
+    <meta
+      name='description'
+      content='Ticket page with various types of tickets available for purchase for a summer music festival with complete lineup.'
+    />
+    <meta name='robots' content='noindex' />
     <title>Billetter</title>
-
-  
-
-
   </head>
 
-  <body class="bg-beige_100">
+  <body class='bg-beige_100'>
     <header>
       <Navigation />
     </header>
 
     <main>
-      <section class="flex items-center flex-col mx-s mt-m md:mt-xl">
-        <img class="mb-xs lg:mb-xl" src="/img/billetter_disp.svg" alt="billetter logo" />
-        <h1 class="text-xl font-bold mb-m text-center lg:text-5xl lg:mb-xxl">Find dine biletter her!</h1>
+      <section class='flex items-center flex-col mx-s mt-m md:mt-xl'>
+        <img
+          class='mb-xs lg:mb-xl'
+          src='/img/billetter_disp.svg'
+          alt='billetter logo'
+        />
+        <h1 class='text-xl font-bold mb-m text-center lg:text-5xl lg:mb-xxl'>
+          Find dine biletter her!
+        </h1>
       </section>
 
-      <article class="flex flex-col md:flex-row flex-wrap justify-center items-center px-l py-l md:gap-xxs md:pl-5 gap-xxxs bg_billet lg:px-xxl lg:py-xxl">
-        <CardBillet title="Fredagsbillet" date="9. Juni 2023" opening="Dørene åbner kl. 15.00" price="695 DKK" />
-        <CardBillet title="Lørdagsbillet" date="10. Juni 2023" opening="Dørene åbner kl. 11.00" price="995 DKK" />
-        <CardBillet title="Partoutbillet" date="9. & 10. Juni 2023" opening="Dørene åbner kl. 15.00 fre og 11.00 lør" price="1195 DKK" />
-        <CardBillet title="Børn u. 12 år" date="9. & 10. Juni 2023" opening="Dørene åbner kl. 15.00 fre og 11.00 lør" price="300 DKK" />
-        <CardBillet title="Ledsagerbillet" date="9. & 10. Juni 2023" opening="Dørene åbner kl. 15.00 fre og 11.00 lør" price="300 DKK" />
+      <article
+        class='flex flex-col md:flex-row flex-wrap justify-center items-center px-l py-l md:gap-xxs md:pl-5 gap-xxxs bg_billet lg:px-xxl lg:py-xxl'
+      >
+        <CardBillet
+          title='Fredagsbillet'
+          date='9. Juni 2023'
+          opening='Dørene åbner kl. 15.00'
+          price='695 DKK'
+        />
+        <CardBillet
+          title='Lørdagsbillet'
+          date='10. Juni 2023'
+          opening='Dørene åbner kl. 11.00'
+          price='995 DKK'
+        />
+        <CardBillet
+          title='Partoutbillet'
+          date='9. & 10. Juni 2023'
+          opening='Dørene åbner kl. 15.00 fre og 11.00 lør'
+          price='1195 DKK'
+        />
+        <CardBillet
+          title='Børn u. 12 år'
+          date='9. & 10. Juni 2023'
+          opening='Dørene åbner kl. 15.00 fre og 11.00 lør'
+          price='300 DKK'
+        />
+        <CardBillet
+          title='Ledsagerbillet'
+          date='9. & 10. Juni 2023'
+          opening='Dørene åbner kl. 15.00 fre og 11.00 lør'
+          price='300 DKK'
+        />
 
-        <section class=" w-80 px-xs py-xs bg-beige_100 border-4 border-primary_orange rounded-xl">
-          <h1 class="leading-none text-primary_black font-bold text-4xl mb-xs">Vigtig info</h1>
-          <p class="text-primary_black">*Gebyr er på 30 kr.</p>
-          <p class="text-primary_black my-xxxs">*Priserne stiger efter d. 8. Juni 2023</p>
-          <p class="text-primary_black">*Billetter kan ikke købes ved indgangen</p>
-          <p class="text-primary_black my-xxxs">*Børn under 11 år skal være ledsaget af en voksen</p>
-          <p class="text-primary_black">*Billetter købes via Billet.dk</p>
+        <section
+          class='w-80 px-xs py-xs bg-beige_100 border-4 border-primary_orange rounded-xl'
+        >
+          <h1 class='leading-none text-primary_black font-bold text-4xl mb-xs'>
+            Vigtig info
+          </h1>
+          <p class='text-primary_black'>*Gebyr er på 30 kr.</p>
+          <p class='text-primary_black my-xxxs'>
+            *Priserne stiger efter d. 8. Juni 2023
+          </p>
+          <p class='text-primary_black'>
+            *Billetter kan ikke købes ved indgangen
+          </p>
+          <p class='text-primary_black my-xxxs'>
+            *Børn under 11 år skal være ledsaget af en voksen
+          </p>
+          <p class='text-primary_black'>*Billetter købes via Billet.dk</p>
         </section>
       </article>
 
-      <section class="mt-l mb-m">
+      <section class='mt-l mb-m'>
         <PosterLineup />
       </section>
 
-      <section class="mb-m flex justify-center items-center">
-        <p class="font-bold text-xl lg:text-3xl">Vi ses til Middelfarts hyggeligste festival!</p>
+      <section class='mb-m flex justify-center items-center'>
+        <p class='font-bold text-xl lg:text-3xl'>
+          Vi ses til Middelfarts hyggeligste festival!
+        </p>
       </section>
 
-      
-        <Footer />
-      
-        
+      <Footer />
     </main>
-    <script src="../scripts/all.js"></script>
+    <script src='../scripts/all.js'></script>
   </body>
 </html>
