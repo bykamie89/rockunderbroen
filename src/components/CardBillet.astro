@@ -19,7 +19,9 @@ const { title, date, opening, price, yderligereInfo } = Astro.props;
     *Der tages forbehold for eventuelle ændringer
   </p>
   <div class='flex justify-center'>
-    <BtnPrimary btn_primary='Køb billet' />
+    <a class='no-underline' href='/billetter'>
+      <BtnPrimary btn_primary='Køb billet' /></a
+    >
   </div>
 </article>
 

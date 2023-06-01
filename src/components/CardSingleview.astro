@@ -1,13 +1,17 @@
 ---
-import "../styles/style.css";
-import BtnPrimary from "../components/BtnPrimary.astro";
+import '../styles/style.css';
+import BtnPrimary from '../components/BtnPrimary.astro';
 const { artist, tid } = Astro.props;
 ---
 
-<article class="w-fit fixed z-50 px-xxs py-xxs border-4 border-primary_blue bg-beige_100 rounded-xl mr-s mb-s">
-  <h1 class="text-xl font-bold md:text-3xl">{artist}</h1>
-  <p class="mb-6 font-bold text-beige_300 md:text-2xl">{tid}</p>
-  <BtnPrimary btn_primary="Køb billet" />
+<article
+  class='w-fit fixed z-50 px-xxs py-xxs border-4 border-primary_blue bg-beige_100 rounded-xl mr-s mb-s'
+>
+  <h1 class='text-xl font-bold md:text-3xl'>{artist}</h1>
+  <p class='mb-6 font-bold text-beige_300 md:text-2xl'>{tid}</p>
+  <a class='no-underline' href='/billetter'>
+    <BtnPrimary btn_primary='Køb billet' /></a
+  >
 </article>
 
 <style></style>
