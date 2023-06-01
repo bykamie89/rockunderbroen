@@ -1,10 +1,13 @@
 ---
-import "../styles/style.css";
+import '../styles/style.css';
 
 const { btn_primary } = Astro.props;
 ---
 
-<button class="btn_primary_small flex flex-col items-center text-primary_white bg-primary_blue md:text-xl">{btn_primary}</button>
+<button
+  class='btn_primary_small flex flex-col items-center text-primary_white bg-primary_blue md:text-xl no-underline'
+  >{btn_primary}</button
+>
 
 <style>
   .btn_primary_small {
