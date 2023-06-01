@@ -1,0 +1,27 @@
+---
+import "../styles/style.css";
+import BtnPrimary from "../components/BtnPrimary.astro";
+---
+
+<div class="cookiewrapper w-10/12 md:w-1/3 lg:w-1/4 h-fit flex flex-col items-center absolute bottom-9 left-9 bg-primary_white text-center gap-6 px-6 py-6 shadow-md">
+    <img class="h-40 w-40" src="img/Artboard 22.svg" alt="cookie" />
+    <div class="flex justify-center items-center flex-col gap-6"> 
+      <h1>COOKIE!</h1>
+      <p>Vi anvender cookies for at forbedre din oplevelse på hjemmesiden</p>
+      <div class="cookiebuttons flex justify-center items-center gap-2 ">
+        <BtnPrimary btn_primary="Jeg elsker cookies!" />
+        <a id="læs" href="cookiepolitik.html" class="text-primary_orange">Læs mere</a>
+      </div>
+    </div>
+  </div>
+  <style>
+
+.cookiewrapper {
+  border-radius: 19px;
+}
+.cookiewrapper.hide {
+  opacity: 0;
+  pointer-events: none;
+}
+
+  </style>

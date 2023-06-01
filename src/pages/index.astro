@@ -5,6 +5,7 @@ import Navigation from "../components/Navigation.astro";
 import Footer from "../components/Footer.astro";
 import BtnPrimary from "../components/BtnPrimary.astro";
 import PosterLineup from "../components/PosterLineup.astro"
+import Cookiebox from "../components/Cookiebox.astro";
 ---
 
 <html lang="en">
@@ -19,9 +20,11 @@ import PosterLineup from "../components/PosterLineup.astro"
   </head>
 
   <body class="bg-beige_100">
+    <Cookiebox/>
     <header>
       <Navigation />
     </header>
+
     <main class="min-h-screen ">
       <section class="flex flex-col justify-center items-center bg_hero h-screen gap-m -mt-56 pb-xs md:pb-m">
         <img class="mt-xxl" src="/img/hero_LG.svg" alt="">
@@ -76,4 +79,5 @@ import PosterLineup from "../components/PosterLineup.astro"
     <script src="../scripts/all.js"></script>
     
   </body>
+  
 </html>
