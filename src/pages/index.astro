@@ -42,7 +42,7 @@ import Cookiebox from '../components/Cookiebox.astro';
         <PosterLineup />
       </section>
       <section class='grid md:grid-cols-3 md:mb-xxl mb-m lg:mb-xxl'>
-        <div class='flex items-center flex-col justify-center'>
+        <div class='flex items-center flex-col justify-center col-span-3 mb-m'>
           <h1 class='text-xl lg:text-3xl font-bold md:mb-xs'>
             HAR DU HUSKET BADETØJET?
           </h1>
@@ -50,33 +50,33 @@ import Cookiebox from '../components/Cookiebox.astro';
         </div>
         <div class='col-span-2 mb-s'>
           <video width='100%' height='100%' controls>
-            <source src='MUB_2018.mp4' type='video/mp4' />
+            <source src='/video/MUB_2018.mp4' type='video/mp4' />
 
             Your browser does not support the video tag.
           </video>
         </div>
         <div class='w-screen md:w-full'>
-          <hr class='blueLine lg:mb-xs' />
+          <hr class='blueLine' />
           <a
             class='hover:no-underline hover:text-primary_blue ml-xs text-4xl lg:text-6xl stroke font-bold'
             href='/kort'>Kort</a
           >
-          <hr class='blueLine lg:mt-xs lg:mb-xs' />
+          <hr class='blueLine' />
           <a
             class='hover:no-underline hover:text-primary_blue ml-xs text-4xl lg:text-6xl stroke font-bold'
             href='/billeter'>Billettyper</a
           >
-          <hr class='blueLine lg:mt-xs lg:mb-xs' />
+          <hr class='blueLine' />
           <a
             class='hover:no-underline hover:text-primary_blue ml-xs text-4xl lg:text-6xl stroke font-bold'
             href='/program'>Program</a
           >
-          <hr class='blueLine lg:mt-xs lg:mb-xs' />
+          <hr class='blueLine' />
           <a
             class='hover:no-underline hover:text-primary_blue ml-xs text-4xl lg:text-6xl stroke font-bold'
             href='/praktisk'>Praktisk info</a
           >
-          <hr class='blueLine lg:mt-xs' />
+          <hr class='blueLine' />
         </div>
       </section>
       <section class='grid md:grid-cols-3 lg:mb-xxl lg:gap-xs'>
