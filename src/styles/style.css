@@ -40,7 +40,6 @@ a {
   font-family: Helvetica;
   line-height: 1.6;
   color: var(--primary_black);
-  
 }
 
 .h1 {
@@ -77,36 +76,35 @@ p {
 a {
   font-size: 1rem;
   color: var(--primary_black);
-  
 }
 a:hover {
   text-decoration: underline;
 }
 
-.bg_hero{
+.bg_hero {
   background-image: url("/img/hero_bg.webp");
   background-size: cover;
-
 }
 
-.bg_orange{
+.bg_orange {
   background-image: url("/img/orangeBg.webp");
   background-size: cover;
 }
 
-.singleViewBg{
+.singleViewBg {
   background-image: url("/img/drew_sycamore.webp");
   background-size: cover;
   background-position: center;
 }
 
-.bgPosterLineup{
+.bgPosterLineup {
   background-image: url("/img/poster_img.webp");
   background-size: cover;
   background-position: center;
+  background-color: #0e0e0e;
 }
 
-.bg_billet{
+.bg_billet {
   background-image: url("/img/bg_billet.webp");
   background-size: cover;
   background-position: center;
@@ -133,7 +131,6 @@ a:hover {
   border: 0.5px solid var(--primary_blue);
 }
 
-.rotate{
+.rotate {
   rotate: 180deg;
 }
-
